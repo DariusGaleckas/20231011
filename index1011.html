@@ -47,36 +47,48 @@ if(sk1 > sk2) {
 
  console.log(rez)
 
-
-
-
-
-
-
-
-
 //Septinta užduotis//
 console.log('SEPTINTA UŽDUOTIS');
 
+let a, b, c, rez1, vardas, pavarde;
+
+a = rand(0, 25);
+b = rand(0, 25);
+c = rand(0, 25);
+
+console.log(a, b, c);
+
+let min = Math.min(a, b, c);
+let max = Math.max(a, b, c);
+rez1 = (a + b + c) -(min + max);
+console.log(a, b, c)
+console.log(`Rezultatas: `, rez1)
 
 //Aštunta užduotis
 console.log('AŠTUNTA UŽDUOTIS');
 
+vardas = `Auksinis`
+pavarde = `Kardas`
 
-
+let inicialai = vardas[0] + pavarde[0];
+console.log(inicialai)
 
 //Devinta užduotis//
 //Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų raidžių. Stringo ilgis 3 simboliai
 console.log('DEVINTA UŽDUOTIS');
 
 
- //let a1b = `a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,z`;
- //console.log(a1b);
- //a1b = a1b.replaceAll(",", "");
-//console.log(a1b)
-//console.log(a1b.length)
-///let a1b1 = a1b[a1b.length 4] 
-//console.log(a1b1)
+ let alfabet = `a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,z`;
+ console.log(alfabet);
+ alfabet = alfabet.replaceAll(",", "");
+console.log(alfabet)
+console.log(alfabet.length)
+
+console.log(alfabet[rand(0, alfabet.length - 1)] + alfabet[rand(0, alfabet.length - 1)] + alfabet[rand(0, alfabet.length - 1)])
+//console.log(alfabet)
+
+//alfabet = alfabet[alfabet.length 4] 
+//console.log()
 //console.log()
 //let b1 = stringas1[stringas1.length -3] 
 
